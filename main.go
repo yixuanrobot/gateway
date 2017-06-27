@@ -63,8 +63,6 @@ func init() {
 
 	dbconstr += "?charset=utf8"
 
-	//db, _ = sql.Open("mysql", "root:Zsdn-Iksh1Ks_%h#1@tcp(127.0.0.1:3306)/gamelog?charset=utf8")
-
 	db, _ = sql.Open("mysql", dbconstr)
 
 	db.SetMaxOpenConns(2000)
@@ -78,9 +76,6 @@ func init() {
 func main() {
 
 	startHttpServer()
-	//testStr := "10001|nihaomdeh12|skl,l|12skj|32jsjhk|4s22"
-	//tlogParser(testStr)
-
 }
 
 func startHttpServer() {
